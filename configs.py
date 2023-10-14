@@ -9,7 +9,7 @@ NO_PORT = bool(environ.get('NO_PORT', False))
 APP_NAME = None
 if 'DYNO' in environ:
 	ON_HEROKU = True
-	APP_NAME = environ.get('APP_NAME')
+	APP_NAME = environ.get('Apna CDN')
 else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
@@ -36,13 +36,13 @@ CUSTOM_CAPTION = environ.get('CUSTOM_CAPTION')
 
 
 class Config(object):
-	API_ID = int(os.environ.get("API_ID", 13323016))
-	API_HASH = os.environ.get("API_HASH", "13323016")
-	BOT_TOKEN = os.environ.get("BOT_TOKEN","6144687436:AAGShuVn551CQHCWjRkdoBIteGgV0SUWxBo")
-	BOT_USERNAME = os.environ.get("BOT_USERNAME" , "MissRozy_BOT")
-	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", -1001772120203))
-	BOT_OWNER = int(os.environ.get("BOT_OWNER", "5965340120"))
-	DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://lazy:Zabintkhab7808@lazydev786.lpvunl5.mongodb.net/?retryWrites=true&w=majority")
+	API_ID = int(os.environ.get("API_ID", 29839533))
+	API_HASH = os.environ.get("API_HASH", "28684502fee4d929a5ccd45c2b9c4c30")
+	BOT_TOKEN = os.environ.get("BOT_TOKEN","6357280469:AAH3Zbs8w7fjd-TkQqfN4j2t2JwaRrSzM94)
+	BOT_USERNAME = os.environ.get("BOT_USERNAME" , "cdndooflix_bot")
+	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", -1001968394711))
+	BOT_OWNER = int(os.environ.get("BOT_OWNER", "6188583231"))
+	DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://root:223190@cluster0.6xl6cmc.mongodb.net/?retryWrites=true&w=majority")
 	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1001765107260")
 	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1001895607162")
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
