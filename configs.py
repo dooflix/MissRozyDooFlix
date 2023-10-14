@@ -38,7 +38,7 @@ CUSTOM_CAPTION = environ.get('CUSTOM_CAPTION')
 class Config(object):
 	API_ID = int(os.environ.get("API_ID", 29839533))
 	API_HASH = os.environ.get("API_HASH", "28684502fee4d929a5ccd45c2b9c4c30")
-	BOT_TOKEN = os.environ.get("BOT_TOKEN","6357280469:AAH3Zbs8w7fjd-TkQqfN4j2t2JwaRrSzM94)
+	BOT_TOKEN = os.environ.get("BOT_TOKEN","6357280469:AAH3Zbs8w7fjd-TkQqfN4j2t2JwaRrSzM94")
 	BOT_USERNAME = os.environ.get("BOT_USERNAME" , "cdndooflix_bot")
 	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", -1001968394711))
 	BOT_OWNER = int(os.environ.get("BOT_OWNER", "6188583231"))
